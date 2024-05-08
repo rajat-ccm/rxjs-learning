@@ -29,7 +29,7 @@ export class DocsComponent {
   }
   onSelectOperator(operator: Operator) {
     this.title = operator.value
-    this.mdUrl = `../assets/markdown/${operator.parent}/${operator.value}.md`
+    this.mdUrl = `/assets/markdown/${operator.parent}/${operator.value}.md`
   }
 
   onLoad(event: any) {
