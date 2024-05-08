@@ -1,0 +1,574 @@
+{
+    "groups": [
+        {
+            "type": "group",
+            "label": "Creation Operators",
+            "value": "creation",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "ajax"
+                },
+                {
+                    "label": "",
+                    "value": "bindCallback"
+                },
+                {
+                    "label": "",
+                    "value": "bindNodeCallback"
+                },
+                {
+                    "label": "",
+                    "value": "defer"
+                },
+                {
+                    "label": "",
+                    "value": "empty"
+                },
+                {
+                    "label": "",
+                    "value": "from"
+                },
+                {
+                    "label": "",
+                    "value": "fromEvent"
+                },
+                {
+                    "label": "",
+                    "value": "fromEventPattern"
+                },
+                {
+                    "label": "",
+                    "value": "generate"
+                },
+                {
+                    "label": "",
+                    "value": "interval"
+                },
+                {
+                    "label": "",
+                    "value": "of"
+                },
+                {
+                    "label": "",
+                    "value": "range"
+                },
+                {
+                    "label": "",
+                    "value": "throwError"
+                },
+                {
+                    "label": "",
+                    "value": "timer"
+                },
+                {
+                    "label": "",
+                    "value": "iif"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Join Creation Operators",
+            "value": "joinCreation",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "combineLatest"
+                },
+                {
+                    "label": "",
+                    "value": "concat"
+                },
+                {
+                    "label": "",
+                    "value": "forkJoin"
+                },
+                {
+                    "label": "",
+                    "value": "merge"
+                },
+                {
+                    "label": "",
+                    "value": "partition"
+                },
+                {
+                    "label": "",
+                    "value": "race"
+                },
+                {
+                    "label": "",
+                    "value": "zip"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Transformation Operators",
+            "value": "transformation",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "buffer"
+                },
+                {
+                    "label": "",
+                    "value": "bufferCount"
+                },
+                {
+                    "label": "",
+                    "value": "bufferTime"
+                },
+                {
+                    "label": "",
+                    "value": "bufferToggle"
+                },
+                {
+                    "label": "",
+                    "value": "bufferWhen"
+                },
+                {
+                    "label": "",
+                    "value": "concatMap"
+                },
+                {
+                    "label": "",
+                    "value": "concatMapTo"
+                },
+                {
+                    "label": "",
+                    "value": "exhaust"
+                },
+                {
+                    "label": "",
+                    "value": "exhaustMap"
+                },
+                {
+                    "label": "",
+                    "value": "expand"
+                },
+                {
+                    "label": "",
+                    "value": "groupBy"
+                },
+                {
+                    "label": "",
+                    "value": "map"
+                },
+                {
+                    "label": "",
+                    "value": "mapTo"
+                },
+                {
+                    "label": "",
+                    "value": "mergeMap"
+                },
+                {
+                    "label": "",
+                    "value": "mergeMapTo"
+                },
+                {
+                    "label": "",
+                    "value": "mergeScan"
+                },
+                {
+                    "label": "",
+                    "value": "pairwise"
+                },
+                {
+                    "label": "",
+                    "value": "partition"
+                },
+                {
+                    "label": "",
+                    "value": "pluck"
+                },
+                {
+                    "label": "",
+                    "value": "scan"
+                },
+                {
+                    "label": "",
+                    "value": "switchScan"
+                },
+                {
+                    "label": "",
+                    "value": "switchMap"
+                },
+                {
+                    "label": "",
+                    "value": "switchMapTo"
+                },
+                {
+                    "label": "",
+                    "value": "window"
+                },
+                {
+                    "label": "",
+                    "value": "windowCount"
+                },
+                {
+                    "label": "",
+                    "value": "windowTime"
+                },
+                {
+                    "label": "",
+                    "value": "windowToggle"
+                },
+                {
+                    "label": "",
+                    "value": "windowWhen"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Filtering Operators",
+            "value": "filtering",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "audit"
+                },
+                {
+                    "label": "",
+                    "value": "auditTime"
+                },
+                {
+                    "label": "",
+                    "value": "debounce"
+                },
+                {
+                    "label": "",
+                    "value": "debounceTime"
+                },
+                {
+                    "label": "",
+                    "value": "distinct"
+                },
+                {
+                    "label": "",
+                    "value": "distinctUntilChanged"
+                },
+                {
+                    "label": "",
+                    "value": "distinctUntilKeyChanged"
+                },
+                {
+                    "label": "",
+                    "value": "elementAt"
+                },
+                {
+                    "label": "",
+                    "value": "filter"
+                },
+                {
+                    "label": "",
+                    "value": "first"
+                },
+                {
+                    "label": "",
+                    "value": "ignoreElements"
+                },
+                {
+                    "label": "",
+                    "value": "last"
+                },
+                {
+                    "label": "",
+                    "value": "sample"
+                },
+                {
+                    "label": "",
+                    "value": "sampleTime"
+                },
+                {
+                    "label": "",
+                    "value": "single"
+                },
+                {
+                    "label": "",
+                    "value": "skip"
+                },
+                {
+                    "label": "",
+                    "value": "skipLast"
+                },
+                {
+                    "label": "",
+                    "value": "skipUntil"
+                },
+                {
+                    "label": "",
+                    "value": "skipWhile"
+                },
+                {
+                    "label": "",
+                    "value": "take"
+                },
+                {
+                    "label": "",
+                    "value": "takeLast"
+                },
+                {
+                    "label": "",
+                    "value": "takeUntil"
+                },
+                {
+                    "label": "",
+                    "value": "takeWhile"
+                },
+                {
+                    "label": "",
+                    "value": "throttle"
+                },
+                {
+                    "label": "",
+                    "value": "throttleTime"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Join Operators",
+            "value": "join",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "combineLatestAll"
+                },
+                {
+                    "label": "",
+                    "value": "concatAll"
+                },
+                {
+                    "label": "",
+                    "value": "exhaustAll"
+                },
+                {
+                    "label": "",
+                    "value": "mergeAll"
+                },
+                {
+                    "label": "",
+                    "value": "switchAll"
+                },
+                {
+                    "label": "",
+                    "value": "startWith"
+                },
+                {
+                    "label": "",
+                    "value": "withLatestFrom"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Multicasting Operators",
+            "value": "multicasting",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "multicast"
+                },
+                {
+                    "label": "",
+                    "value": "publish"
+                },
+                {
+                    "label": "",
+                    "value": "publishBehavior"
+                },
+                {
+                    "label": "",
+                    "value": "publishLast"
+                },
+                {
+                    "label": "",
+                    "value": "publishReplay"
+                },
+                {
+                    "label": "",
+                    "value": "share"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Error Handling Operators",
+            "value": "errorHandling",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "catchError"
+                },
+                {
+                    "label": "",
+                    "value": "retry"
+                },
+                {
+                    "label": "",
+                    "value": "retryWhen"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Utility Operators",
+            "value": "utility",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "tap"
+                },
+                {
+                    "label": "",
+                    "value": "delay"
+                },
+                {
+                    "label": "",
+                    "value": "delayWhen"
+                },
+                {
+                    "label": "",
+                    "value": "dematerialize"
+                },
+                {
+                    "label": "",
+                    "value": "materialize"
+                },
+                {
+                    "label": "",
+                    "value": "observeOn"
+                },
+                {
+                    "label": "",
+                    "value": "subscribeOn"
+                },
+                {
+                    "label": "",
+                    "value": "timeInterval"
+                },
+                {
+                    "label": "",
+                    "value": "timestamp"
+                },
+                {
+                    "label": "",
+                    "value": "timeout"
+                },
+                {
+                    "label": "",
+                    "value": "timeoutWith"
+                },
+                {
+                    "label": "",
+                    "value": "toArray"
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Conditional and Boolean Operators",
+            "value": "conditional",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "defaultIfEmpty"
+                },
+                {
+                    "label": "",
+                    "value": "every"
+                },
+                {
+                    "label": "",
+                    "value": "find"
+                },
+                {
+                    "label": "",
+                    "value": "findIndex"
+                },
+                {
+                    "label": "",
+                    "value": "isEmpty"
+                },
+                {
+                    "label": "",
+                    "value": " "
+                }
+            ]
+        },
+        {
+            "type": "group",
+            "label": "Mathematical and Aggregate Operators",
+            "value": "math",
+            "operators": [
+                {
+                    "label": "",
+                    "value": "count"
+                },
+                {
+                    "label": "",
+                    "value": "max"
+                },
+                {
+                    "label": "",
+                    "value": "min"
+                },
+                {
+                    "label": "",
+                    "value": "reduce"
+                }
+            ]
+        }
+    ]
+}
