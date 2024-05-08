@@ -1,0 +1,31 @@
+<div class="flex container">
+  <div class="flex-none w-64 overflow-y-scroll h-lvh p-3">
+    <ul>
+      <li *ngFor="let group of operatorGroups">
+        <div class="bg-slate-200 p-2">{{ group.label }}</div>
+        <ul class="ml-5">
+          <li
+            *ngFor="let operator of group.operators"
+            (click)="onSelectOperator(operator)"
+          >
+            {{ operator.value }}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="flex-1 p-5 overflow-y-scroll h-lvh">
+    <h1 class="capitalize text-lg font-bold">{{ title }}</h1>
+    <markdown
+      lineNumbers
+      clipboard
+      [start]="1"
+      [src]="mdUrl"
+      (load)="onLoad($event)"
+      (error)="onError($event)"
+    >
+    </markdown>
+
+    <!-- <div [innerHTML]="mdContent">No tutorial available</div> -->
+  </div>
+</div>
