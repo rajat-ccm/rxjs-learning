@@ -9,5 +9,15 @@ module.exports = {
   plugins: [
     require('tailwindcss'),
     require('autoprefixer'),
+    // function ({ addUtilities }) {
+    //   const newUtilities = {
+    //     '.escape-div': {
+    //       '*': 'initial',
+    //       'h1': 'initial',
+    //     },
+    //   };
+
+    //   addUtilities(newUtilities, ['responsive', 'hover']);
+    // },
   ],
 }

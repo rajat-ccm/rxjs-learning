@@ -20,6 +20,7 @@ export class DocsComponent {
       })
     }
   })
+  hasData = true
   mdContent = ''
   title = ''
   mdUrl = ''
@@ -29,25 +30,14 @@ export class DocsComponent {
   }
   onSelectOperator(operator: Operator) {
     this.title = operator.value
-    this.mdUrl = `/assets/markdown/${operator.parent}/${operator.value}.md`
+    this.mdUrl = `./assets/tutorials/${operator.parent}/${operator.value}.md`
   }
 
   onLoad(event: any) {
-    console.log('event', event)
+    this.hasData = true;
   }
 
   onError(event: any) {
-    console.log('event', event)
+    this.hasData = false;
   }
-
-  // loadMarkdown(url: string) {
-  //   this.http.get(url, { responseType: 'text' }).subscribe(
-  //     (result) => {
-  //       this.mdContent = this.mdService.compile(result)
-  //     },
-  //     (error) => {
-  //       console.log(error)
-  //     }
-  //   )
-  // }
 }

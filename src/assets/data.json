@@ -64,14 +64,6 @@
                 {
                     "label": "",
                     "value": "iif"
-                },
-                {
-                    "label": "",
-                    "value": ""
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -107,10 +99,6 @@
                 {
                     "label": "",
                     "value": "zip"
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -230,14 +218,6 @@
                 {
                     "label": "",
                     "value": "windowWhen"
-                },
-                {
-                    "label": "",
-                    "value": ""
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -345,14 +325,6 @@
                 {
                     "label": "",
                     "value": "throttleTime"
-                },
-                {
-                    "label": "",
-                    "value": ""
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -388,14 +360,6 @@
                 {
                     "label": "",
                     "value": "withLatestFrom"
-                },
-                {
-                    "label": "",
-                    "value": ""
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -427,10 +391,6 @@
                 {
                     "label": "",
                     "value": "share"
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -450,10 +410,6 @@
                 {
                     "label": "",
                     "value": "retryWhen"
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },
@@ -509,10 +465,6 @@
                 {
                     "label": "",
                     "value": "toArray"
-                },
-                {
-                    "label": "",
-                    "value": ""
                 }
             ]
         },

@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production --base-href=/rxjs-learning/",
+    "deploy:gh-pages": "ngh --dir=dist/rxjs-learning/browser"
   },
   "private": true,
   "dependencies": {
