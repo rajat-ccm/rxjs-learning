@@ -1,11 +1,12 @@
+```typescript
+import { from } from "rxjs";
 
-# Example Markdown File
+const array = [1, 2, 3];
+const promise = Promise.resolve("Hello");
 
-This is a **sample** Markdown file created using Node.js.
+const arrayObservable = from(array);
+const promiseObservable = from(promise);
 
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+arrayObservable.subscribe((value) => console.log("Array value:", value));
+promiseObservable.subscribe((value) => console.log("Promise value:", value));
 ```

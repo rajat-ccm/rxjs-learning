@@ -1,11 +1,19 @@
+```typescript
+import { from } from "rxjs";
+import { mergeScan, scan } from "rxjs/operators";
 
-# Example Markdown File
+// Example: Tracking cumulative total and emitting only positive values
+const numbers = from([-1, 2, -3, 4, -5]);
 
-This is a **sample** Markdown file created using Node.js.
+numbers
+  .pipe(
+    mergeScan((acc, val) => {
+      const total = acc + val;
+      return total >= 0 ? from([total]) : from([]);
+    }, 0)
+  )
+  .subscribe((result) => console.log(result));
 
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+// 2
+// 6
 ```

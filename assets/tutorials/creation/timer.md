@@ -1,11 +1,7 @@
+```typescript
+import { timer } from "rxjs";
 
-# Example Markdown File
+const timerObservable = timer(2000); // Emit after 2 seconds
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+timerObservable.subscribe(() => console.log("Timer completed"));
 ```

@@ -1,11 +1,7 @@
+```typescript
+import { range } from "rxjs";
 
-# Example Markdown File
+const rangeObservable = range(1, 5); // Start from 1, emit 5 values
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+rangeObservable.subscribe((value) => console.log("Range value:", value));
 ```

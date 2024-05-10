@@ -1,11 +1,7 @@
+```typescript
+import { interval } from "rxjs";
 
-# Example Markdown File
+const intervalObservable = interval(1000);
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+intervalObservable.subscribe((value) => console.log("Interval value:", value));
 ```

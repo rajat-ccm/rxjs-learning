@@ -1,11 +1,10 @@
+```typescript
+// Using concatMapTo to process data from each source sequentially
+concat(source1, source2, source3)
+  .pipe(concatMapTo((data) => of(`Processed ${data}`)))
+  .subscribe((result) => console.log(result));
 
-# Example Markdown File
-
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+// Processed Source 1 Data
+// Processed Source 2 Data
+// Processed Source 3 Data
 ```

@@ -1,11 +1,9 @@
+```typescript
+import { throwError } from "rxjs";
 
-# Example Markdown File
+const errorObservable = throwError(new Error("Something went wrong"));
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+errorObservable.subscribe({
+  error: (err) => console.error("Error:", err.message),
+});
 ```

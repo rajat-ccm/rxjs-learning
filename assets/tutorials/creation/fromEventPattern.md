@@ -1,11 +1,15 @@
+```typescript
+import { fromEventPattern } from "rxjs";
 
-# Example Markdown File
+function addClickHandler(handler: (event: MouseEvent) => void) {
+  document.addEventListener("click", handler);
+}
 
-This is a **sample** Markdown file created using Node.js.
+function removeClickHandler(handler: (event: MouseEvent) => void) {
+  document.removeEventListener("click", handler);
+}
 
-- Bullet Point 1
-- Bullet Point 2
+const clickObservable = fromEventPattern(addClickHandler, removeClickHandler);
 
-```typescript 
-console.log('Hello, Markdown!');
+clickObservable.subscribe(() => console.log("Clicked"));
 ```
