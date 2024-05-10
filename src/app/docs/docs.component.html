@@ -1,10 +1,11 @@
 <div class="flex container">
   <div class="flex-none w-64 overflow-y-scroll h-lvh p-3">
     <ul>
-      <li *ngFor="let group of operatorGroups">
-        <div class="bg-slate-200 p-2">{{ group.label }}</div>
+      <li *ngFor="let group of operatorGroups" class="mb-1 text-white">
+        <div class="bg-slate-500 p-2">{{ group.label }}</div>
         <ul class="ml-5">
           <li
+            class="bg-slate-200 hover:bg-slate-300 p-1 px-2 mt-1 select-none text-black"
             *ngFor="let operator of group.operators"
             (click)="onSelectOperator(operator)"
           >
@@ -16,8 +17,9 @@
   </div>
   <div class="flex-1 p-5 overflow-y-scroll h-lvh">
     <h1 class="capitalize text-2xl font-bold border-b-2 mb-5">{{ title }}</h1>
-    <markdown *ngIf="hasData"
-    data-remove-styles
+    <markdown
+      *ngIf="hasData"
+      data-remove-styles
       lineNumbers
       clipboard
       [start]="1"
