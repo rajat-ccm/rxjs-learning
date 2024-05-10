@@ -1,11 +1,7 @@
+```typescript
+import { of } from "rxjs";
 
-# Example Markdown File
+const valuesObservable = of(1, 2, 3);
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+valuesObservable.subscribe((value) => console.log("Value:", value));
 ```

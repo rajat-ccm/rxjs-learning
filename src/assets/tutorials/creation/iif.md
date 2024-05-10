@@ -1,11 +1,13 @@
+```typescript
+import { iif, of } from "rxjs";
 
-# Example Markdown File
+const condition = true;
 
-This is a **sample** Markdown file created using Node.js.
+const observable = iif(
+  () => condition,
+  of("True Observable"),
+  of("False Observable")
+);
 
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+observable.subscribe((value) => console.log("Value:", value));
 ```

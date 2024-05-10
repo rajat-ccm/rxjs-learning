@@ -1,11 +1,24 @@
+```typescript
+import { of } from "rxjs";
+import { mergeMapTo } from "rxjs/operators";
 
-# Example Markdown File
+// Example: Making multiple HTTP requests concurrently
+const requests = of("Request 1", "Request 2", "Request 3");
 
-This is a **sample** Markdown file created using Node.js.
+requests
+  .pipe(mergeMapTo(sendHttpRequest()))
+  .subscribe((response) => console.log(response));
 
-- Bullet Point 1
-- Bullet Point 2
+// Mock HTTP request function
+function sendHttpRequest() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Response");
+    }, 1000);
+  });
+}
 
-```typescript 
-console.log('Hello, Markdown!');
+// Response
+// Response
+// Response
 ```

@@ -1,11 +1,15 @@
+```typescript
+import { from } from "rxjs";
+import { mapTo } from "rxjs/operators";
 
-# Example Markdown File
+// Example: Mapping numbers to their squares
+const numbers = from([1, 2, 3, 4, 5]);
 
-This is a **sample** Markdown file created using Node.js.
+numbers.pipe(mapTo((x) => x * x)).subscribe((square) => console.log(square));
 
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+// 1
+// 4
+// 9
+// 16
+// 25
 ```

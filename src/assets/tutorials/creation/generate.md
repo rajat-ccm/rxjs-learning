@@ -1,11 +1,12 @@
+```typescript
+import { generate } from "rxjs";
 
-# Example Markdown File
+const generateObservable = generate(
+  0, // initial state
+  (x) => x < 5, // condition
+  (x) => x + 1, // iteration
+  (x) => x * x // result selector
+);
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+generateObservable.subscribe((value) => console.log("Generated value:", value));
 ```

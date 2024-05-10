@@ -1,11 +1,16 @@
+```typescript
+import { bindNodeCallback } from "rxjs";
 
-# Example Markdown File
+// Simulated asynchronous function
+function readFile(path: string, callback: (error: any, data: any) => void) {
+  setTimeout(() => {
+    callback(null, `Content of ${path}`);
+  }, 1000);
+}
 
-This is a **sample** Markdown file created using Node.js.
+const readFileObservable = bindNodeCallback(readFile);
 
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+readFileObservable("/path/to/file.txt").subscribe((content) => {
+  console.log("File content:", content);
+});
 ```

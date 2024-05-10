@@ -1,11 +1,22 @@
+```typescript
+const userEvents = [
+  { userId: 1, event: "click" },
+  { userId: 2, event: "hover" },
+  { userId: 1, event: "scroll" },
+  { userId: 2, event: "click" },
+];
 
-# Example Markdown File
+from(userEvents)
+  .pipe(
+    groupBy((event) => event.userId),
+    mergeMap((group) =>
+      group.pipe(map((event) => `${group.key}: ${event.event}`))
+    )
+  )
+  .subscribe(console.log);
 
-This is a **sample** Markdown file created using Node.js.
-
-- Bullet Point 1
-- Bullet Point 2
-
-```typescript 
-console.log('Hello, Markdown!');
+// 1: click
+// 2: hover
+// 1: scroll
+// 2: click
 ```
